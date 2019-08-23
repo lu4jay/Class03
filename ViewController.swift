@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ccTest: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,15 +24,22 @@ class ViewController: UIViewController {
         var 到超市 = true
         var 看到西瓜 = true
         
-        print( 包子的數量 )
-        print( 西瓜的數量 )
+//        print( 包子的數量 )
+//        print( 西瓜的數量 )
         
-        func add (first : int, second : int) -> int {
-                    return 0
-        }
+        
         
     }
+    
+    func add (first : Int, second : Int) -> Int {
+        return 0 
+    }
 
-
+    @IBAction func btnTestClicked(_ sender: UIButton) {
+    
+        ccTest.text = "Hi welcome to code world!"
+    
+    }
+    
 }
 
